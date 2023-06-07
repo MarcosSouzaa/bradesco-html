@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando Tabela</title>
+</head>
+
+<body>
+    <!--Esse artigo traz apenas algumas tags para criação de tabelas-->
+    <header>
+        <h1 ALIGN="centergit ">Criando Tabelas</h1>
+    </header>
+
+    <h2> Criando Tabela sem borda</h2>
+    <table>
+        <tr>
+            <td> Nome </td>
+            <td> Sobrenome </td>
+        <tr>
+            <td> Anna </td>
+            <td> Santos </td>
+        <tr>
+            <td> Vanessa </td>
+            <td> Medeiros </td>
+    </table><br>
+
+    <h2>Inserindo uma Borda usando o atributo border</h2>
+
+    <table border="1">
+        <tr>
+            <td>Nome</td>
+            <td>Sobrenome</td>
+        <tr>
+            <td>Anna</td>
+            <td>Santos</td>
+        <tr>
+            <td>Vanessa</td>
+            <td>Medeiros</td>
+    </table><br>
+
+    <h2>Inserindo uma borda colorida utilizando o atributo bordercolor</h2>
+
+    <table border="3" bordercolor="ff6600">
+        <tr>
+            <td>Nome</td>
+            <td>Sobrenome</td>
+        </tr>
+        <tr>
+            <td>Anna</td>
+            <td>Santos</td>
+        </tr>
+        <tr>
+            <td>Vanessa</td>
+            <td>Medeiros</td>
+        </tr>
+    </table><br>
+
+    <h2>Utilizando o atributo BGCOLOR definindo o fundo da cor da tabela</h2>
+    <P>Pode ou não ser usado com os atributo BORDER e BORDERCOLOR</P>
+
+    <table BORDER="3" BORDERCOLOR="FF6600" BGCOLOR="CCFFFF">
+        <tr>
+            <td> Nome </td>
+            <td> Sobrenome </td>
+        </tr>
+        <tr>
+            <td> Anna </td>
+            <td> Santos </td>
+        </tr>
+        <Tr>
+            <td> Vanessa </td>
+            <td> Medeiros </td>
+        </tr>
+    </TABLE><br>
+
+    <h2>Posso definir corde fundo para partes da tabela </h2>
+    <p>Faço isso usando BGCOLOR para as Tags tr e td </p>
+
+    <table BORDER="3" BORDERCOLOR="FF6600">
+
+        <tr BGCOLOR="CCFFFF">
+            <td> Nome </td>
+            <td> Sobrenome </td>
+        </tr>
+        <tr>
+            <td> Anna </td>
+            <td> Santos </td>
+        </tr>
+        <tr>
+            <Td> Vanessa </Td>
+            <td BGCOLOR="CCFFFF"> Medeiros </td>
+        </tr>
+    </table><br>
+
+    <h2>Usando o atributo BACKGROUND para defininir uma imagem no fundo da tabela </h2>
+
+    <table BORDER="3" BORDERCOLOR="000066" BACKGROUND="img/fundo-tabela.gif">
+        <tr>
+            <td><B>Nome</B></td>
+            <td><B>Sobrenome</B></td>
+        </tr>
+        <tr>
+            <td>Anna</td>
+            <td>Santos</td>
+        </tr>
+        <tr>
+            <td>Vanessa</td>
+            <td>Medeiros</td>
+        </tr>
+    </table>
+
+    <h2>Os Atributos width E height são utilizados para definir largura e altura da tabela em pixel ou porcentagem</h2>
+    <ul>
+        <li>width - Define a largura </li>
+        <li>height- Define a altura </li>
+    </ul>
+
+    <table WIDTH="300" HEIGHT="20%" BORDER="2">
+        <tr BGCOLOR=#E0EEEE>
+            <td>
+                <FONT FACE="Comic Sans MS"><B>Nome</B>
+            </td>
+            <td>
+                <FONT FACE="Comic Sans MS"><B>Sobrenome</B>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <FONT FACE="Calibri">Anna</FONT>
+            </td>
+            <td>
+                <FONT FACE="Calibri">Santos</FONT>
+            </td>
+        </tr>
+        <tr BGCOLOR=#E0EEEE>
+            <td>
+                <FONT FACE="Calibri">Vanessa</FONT>
+            </td>
+            <td>
+                <FONT FACE="Calibri">Medeiros</FONT>
+            </td>
+        </tr>
+    </table>
+
+    <h2>Usando o atributo ALIGN para alterar o alinhamento em relação à página web</h2>
+
+    <h4>Alinhamento à esquerda - LEFT</h4>
+
+    <table BORDER="2" ALIGN="left">
+        <tr BGCOLOR=#E0EEE>
+            <td>Nome</td>
+            <td>Sobrenome</td>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>Santos</td>
+        </tr>
+    </table><br><br>
+
+    <h4 ALIGN="center ">Alinhamento ao centro - CENTER </h4>
+
+    <table BORDER="2" ALIGN="center">
+        <tr BGCOLOR=#E0EEE>
+            <td>Nome</td>
+            <td>Sobrenome</td>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>Santos</td>
+        </tr>
+    </table><br>
+
+    <h4 ALIGN="right ">Alinhamento a direita - RIGHT </h4>
+
+    <table BORDER="2" ALIGN="right">
+        <tr BGCOLOR=#E0EEE>
+            <td>Nome</td>
+            <td>Sobrenome</td>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>Santos</td>
+        </tr>
+    </table><br><br><br>
+
+    <h2>O atributo CELLSPACING especifica o espaço entre a borda da tabela e as celulas em pixel </h2>
+
+    <TABLE WIDTH="300" HEIGHT="25%" BORDER="4" CELLSPACING="10">
+        <tr BGCOLOR=#E0F8E0>
+            <TD ALIGN="center" VALIGN="center" HEIGHT="40" COLSPAN="2">
+                <FONT FACE="Comic Sans MS"><B>CADASTRO DE CLIENTES</B>
+            </TD>
+        </tr>
+        <tr BGCOLOR=#E0EEEE>
+            <td>
+                <FONT FACE="Calibri"><B>Nome</B>
+            </td>
+            <td>
+                <FONT FACE="Calibri"><B>Sobrenome</B>
+            </td>
+        </tr>
+    </table><br><br>
+
+    <table WIDTH="300" HEIGHT="25%" BORDER="4" CELLSPACING="10">
+        <tr BGCOLOR=#E0F8E0>
+            <td ALIGN="center" VALIGN="center" HEIGHT="40" COLSPAN="2">
+                <FONT FACE="Comic Sans MS"><B>CADASTRO DE CLIENTES</B>
+            </td>
+        </tr>
+        <tr BGCOLOR=#E0EEEE>
+            <td>
+                <FONT FACE="Calibri"><B>Nome</B>
+            </td>
+            <td>
+                <FONT FACE="Calibri"><B>Sobrenome</B>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <FONT FACE="Calibri">Anna</FONT>
+            </td>
+            <td>
+                <FONT FACE="Calibri">Santos</FONT>
+            </td>
+        </tr>
+        <tr BGCOLOR=#E0EEEE>
+            <td>
+                <FONT FACE="Calibri">Vanessa</FONT>
+            </td>
+            <td>
+                <FONT FACE="Calibri">Medeiros</FONT>
+            </td>
+        </tr>
+    </table><br>
+
+    <h2>Atributos da Tag TD para mudar as propriedades das células</h2>
+
+    <ul>
+        <li><b>ALIGN</b></li>
+        <li><b>VALIGN</b></li>
+        <li><b>COLSPAN</b></li>
+        <li><b>ROWSPAN</b></li>
+    </ul><br>
+
+    <h4><b>ALIGN</b></h4>
+
+    <table widht="300" height="20%" BORDER="2">
+        <tr BGCOLOR="#E0EEEE">
+            <td ALIGN="left"><b>Nome</b></td>
+            <td ALIGN="left"><b>Sobrenome</b></td>
+        </tr>
+        <tr>
+            <td ALIGN="center"><b>Rosana</b></td>
+            <td ALIGN="right"><b>Santos</b></td>
+        </tr>
+    </table><br>
+
+
+    <h4><b>VALIGN</b></h4>
+    <P>Esse atributo alinha as células verticalmente, os valores dos atributos são:</P>
+    <ul>
+        <li><b>TOP</b> - Alinha os dados com a parte superior da célula</li>
+        <li><b>BOTTOM </b>- Alinha os dados com a parte inferioir da célula</li>
+        <li><b>CENTER</b> - Centraliza verticalmente os dados</li>
+    </ul>
+
+    <table widht="300" height="20%" BORDER="2">
+        <tr BGCOLOR="#E0EEEE">
+            <td VALIGN="bottom" height="30"><b>Nome</b></td>
+            <td VALIGN="top" height="30"><b>Sobrenome</b></td>
+        </tr>
+        <tr>
+            <td ALIGN="center" height="30"><b>Rosana</b></td>
+            <td ALIGN="center" height="30"><b>Santos</b></td>
+        </tr>
+    </table><br>
+
+
+    <h4><b>COLSPAN</b></h4>
+    <P>Esse atributo é utilizado para mesclar uma célula em mais de uma coluna , o valor do atributo é fixado em número
+    </P>
+
+    <table widht="300" height="20%" BORDER="2">
+        <tr BGCOLOR="#E0EEEE">
+            <td COLSPAN="2"><b>Nome</b></td>
+        </tr>
+        <tr>
+            <td><b>Rosana</b></td>
+            <td><b>Santos</b></td>
+        </tr>
+    </table><br>
+
+    <h4><b>ROWSPAN</b></h4>
+    <P>Esse atributo é utilizado para mesclar uma célula em mais de uma linha , o valor do atributo é fixado em número
+    </P>
+
+    <table widht="300" height="20%" BORDER="2">
+        <tr BGCOLOR="#E0EEEE">
+            <td><b>Nome</b></td>
+            <td><b>Sobrenome</b></td>
+        </tr>
+        <tr>
+            <td>Rosana</td>
+            <td rowspan="2"><b>Santos</b></td>
+        </tr>
+        <tr>
+            <td>Vanessa</td>
+        </tr>
+    </table><br>
+
+    <footer>
+        <h1>The End!</h1>
+    </footer>
+
+
+</body>
+
+</html>
