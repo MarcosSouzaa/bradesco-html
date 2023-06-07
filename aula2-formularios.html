@@ -1,19 +1,187 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulários</title>
 </head>
+
 <body>
 
     <header>
         <h1>Criando Formulários </h1>
     </header>
-    
-    <form action="">
-        
+
+    <h2>Formulário com campo para digitar o Nome e Estado </h2>
+
+    <form action="m.storeproducoes@email.com" method="get">
+        <p>
+            <font face="calibri"> Nome: <input type=text name="nome" size="25" maxlenght="50">
+        </p>
+        <p> Estado: <input type=text name="uf" size="2" value="SP"></font>
+        </p>
+    </form><br>
+
+    <h2>Formulário para inserir o campo senha </h2>
+
+    <form action="m.storeproducoes@email.com" method="get">
+        <p>
+            <font face="calibri"> Nome: <input type=text name="nome" size="25" maxlenght="50">
+        </p>
+        <p> Nº Cartão de Crédito <input type=text name="num_cartao" size="16"></font>
+        </p>
+        <p> Senha <input type="password" name="senha" size="6"> </p>
     </form>
+
+    <h2>Inserindo botões no Formulário como escolha única </h2>
+
+    <form action="m.storeproducoes@email.com" method="get">
+        <p>
+            <font face="calibri"> Nome: <input type=text name="nome" size="25" maxlenght="50">
+        </p>
+        <p> Nº Cartão de Crédito <input type=text name="num_cartao" size="16"></font>
+        </p>
+        <p> Senha <input type="password" name="senha" size="6"> </p>
+        <p><b>Selecione a Bandeira do Cartão de Crédito:</b><br>
+            <input type="radio" name="selecao-cartao" checked>VISA <br>
+            <input type="radio" name="selecao-cartao" checked>MASTERCARD <br>
+            <input type="radio" name="selecao-cartao" checked>CIELO
+        </p>
+    </form>
+
+    <h2>Inserindo botões de Múltiplas Escolhas </h2>
+
+    <form action="m.storeproducoes@email.com" method="get">
+        <p>
+            <font face="calibri"> Nome: <input type=text name="nome" size="25" maxlenght="50">
+        </p>
+        <p> Nº Cartão de Crédito <input type=text name="num_cartao" size="16"></font>
+        </p>
+        <p> Senha <input type="password" name="senha" size="6"> </p>
+        <p><b>Selecione a Bandeira do Cartão de Crédito:</b><br>
+            <input type="radio" name="selecao-cartao" checked>VISA <br>
+            <input type="radio" name="selecao-cartao" checked>MASTERCARD <br>
+            <input type="radio" name="selecao-cartao" checked>CIELO
+        </p>
+        <p>Selecione o Horário de Entrega:<br>
+            <input type="checkbox" name="horario1" size="1">8h às 12h <br>
+            <input type="checkbox" name="horario2" size="1">13h às 15h <br>
+            <input type="checkbox" name="horario3" size="1">16h às 18h <br>
+        </p>
+    </form> <br>
+
+    <h2>Inserindo uma área de Texto maior que de um formulário com a tag textarea</h2>
+    <p>Os atributos usados são:</p>
+
+    <ul>
+        <li><b>ROWS</b> - Especifica o número de linhas (altura) </li>
+        <li><B>COLS</B> - Especifica o numero de colunas (largura) </li>
+    </ul>
+
+    <form action="m.storeproducoes@email.com" method="get">
+        <p>
+            <font face="calibri"> Nome: <input type=text name="nome" size="25" maxlenght="50">
+        </p>
+        <p> Nº Cartão de Crédito <input type=text name="num_cartao" size="16"></font>
+        </p>
+        <p> Senha <input type="password" name="senha" size="6"> </p>
+        <p><b>Selecione a Bandeira do Cartão de Crédito:</b><br>
+            <input type="radio" name="selecao-cartao" checked>VISA <br>
+            <input type="radio" name="selecao-cartao" checked>MASTERCARD <br>
+            <input type="radio" name="selecao-cartao" checked>CIELO
+        </p>
+        <p>Selecione o Horário de Entrega:<br>
+            <input type="checkbox" name="horario1" size="1">8h às 12h <br>
+            <input type="checkbox" name="horario2" size="1">13h às 15h <br>
+            <input type="checkbox" name="horario3" size="1">16h às 18h
+        </p>
+        <p>Endereço <input type="text" name="end" size="30"></p>
+        <p>Referência <textarea name="ref" cols="40" rows="2"></textarea></p>
+    </form>
+
+    <h2>Inserindo Botão Submit Botão Reset</h2>
+
+    <form action="m.storeproducoes@email.com" method="get">
+        <p>
+            <font face="calibri"> Nome: <input type=text name="nome" size="25" maxlenght="50">
+        </p>
+        <p> Nº Cartão de Crédito <input type=text name="num_cartao" size="16"></font>
+        </p>
+        <p> Senha <input type="password" name="senha" size="6"> </p>
+        <p><b>Selecione a Bandeira do Cartão de Crédito:</b><br>
+            <input type="radio" name="selecao-cartao" checked>VISA <br>
+            <input type="radio" name="selecao-cartao" checked>MASTERCARD <br>
+            <input type="radio" name="selecao-cartao" checked>CIELO
+        </p>
+        <p>Selecione o Horário de Entrega:<br>
+            <input type="checkbox" name="horario1" size="1">8h às 12h <br>
+            <input type="checkbox" name="horario2" size="1">13h às 15h <br>
+            <input type="checkbox" name="horario3" size="1">16h às 18h
+        </p>
+        <p>Endereço <input type="text" name="end" size="30"></p>
+        <p>Referência <textarea name="ref" cols="40" rows="2"></textarea></p>
+        <input type=submit value="Enviar"><input type=reset value="Limpar">
+
+    </form><br>
+
+    <h2>Inserindo um campo oculto com o valor HIDDEN no atributo TYPE</h2>
+
+    <form action="m.storeproducoes@email.com" method="get">
+        <p>
+            <font face="calibri"> Nome: <input type=text name="nome" size="25" maxlenght="50">
+        </p>
+        <p> Nº Cartão de Crédito <input type=text name="num_cartao" size="16"></font>
+        </p>
+        <p> Senha <input type="password" name="senha" size="6"> </p>
+        <p><b>Selecione a Bandeira do Cartão de Crédito:</b><br>
+            <input type="radio" name="selecao-cartao" checked>VISA <br>
+            <input type="radio" name="selecao-cartao" checked>MASTERCARD <br>
+            <input type="radio" name="selecao-cartao" checked>CIELO
+        </p>
+        <p>Selecione o Horário de Entrega:<br>
+            <input type="checkbox" name="horario1" size="1">8h às 12h <br>
+            <input type="checkbox" name="horario2" size="1">13h às 15h <br>
+            <input type="checkbox" name="horario3" size="1">16h às 18h
+        </p>
+        <p>Endereço <input type="text" name="end" size="30"></p>
+        <p>Referência <textarea name="ref" cols="40" rows="2"></textarea></p>
+        <input type=submit value="Enviar"><input type=reset value="Limpar">
+        <INPUT TYPE=hidden NAME="cpf" VALUE="verdadeiro">
+    </form>
+
+    <h2>Lista de Opções ou Menu</h2>
+    <p>A <strong>lista de opções</strong> serve para controlar o número de opções exibidas, pois é possível
+        definir sua altura com o atributo <b>SIZE<b></b></p>
+
+    <h3>EXEMPLO DE LISTA DE OPÇÕES</h3>
+    <h4>Escolha a cidade que deseja conhecer</h4>
+    <form>
+        <select name="cidades" size="4">
+            <option>Londres
+            <option>Paris
+            <option>Roma
+            <option>Madri
+        </select>
+    </form><br>
+
+    <h2>Menu</h2>
+    <p>A diferença de <strong>Menu para Lista de Opções</strong> é que apenas uma linha como uma seta para baixo
+        é exibida quando o navegador carrega o formulário.</p>
+
+    <h3>EXEMPLO DE MENU</h3>
+    <h4>Escolha a cidade que deseja conhecer</h4>
+    <form>
+        <select name="cidades">
+            <option>Londres
+            <option>Paris
+            <option>Roma
+            <option>Madri
+        </select>
+    </form>
+
+
 </body>
+
 </html>
